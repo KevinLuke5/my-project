@@ -1,0 +1,94 @@
+// 搜索条件表单样式
+.head-container {
+  padding-bottom: 0;
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+  .el-form-item__label {
+    font-size: 12px;
+    color: #37414a;
+    margin-right: 0;
+  }
+  .el-input {
+    width: 200px;
+  }
+  .el-select {
+    width: 200px;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .right-btn {
+    float: right;
+  }
+}
+
+// 弹窗内表单样式
+.dialog-form {
+  padding-bottom: 0;
+  .el-form-item {
+    // margin-bottom: 5px;
+  }
+  .el-form-item__label {
+    font-size: 12px;
+    // color: #37414a;
+    margin-right: 0;
+  }
+  .el-input {
+    width: 200px;
+  }
+  .el-input-number {
+    .el-input {
+      width: 130px;
+    }
+  }
+  .el-select {
+    width: 200px;
+  }
+}
+
+// 远程搜索输入框选项样式
+.search-autocomplete {
+  li {
+    line-height: normal;
+    padding: 7px;
+
+    .name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .code {
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+
+    .highlighted .code {
+      color: #ddd;
+    }
+  }
+}
+
+// 远程搜索下拉框选项样式
+.search-select {
+  .el-select-dropdown__item {
+    max-width: 600px;
+    white-space: normal;
+    .name {
+      font-size: 12px;
+    }
+    .code {
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+    .highlighted .code {
+      color: #ddd;
+    }
+  }
+}
+
+// 表格表头可复制
+.el-table th {
+  user-select: initial;
+}

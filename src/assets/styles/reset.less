@@ -1,0 +1,313 @@
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+aside {
+  background: #eef1f6;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: #337ab7;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+.main-container {
+  background: #f0f2f5;
+}
+
+//main-container全局样式
+.app-container {
+  // padding: 20px 20px 45px 20px;
+  padding: 16px;
+  background: #f0f2f5;
+}
+
+.components-container {
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(114, 114, 114, 1);
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(
+    90deg,
+    rgba(32, 182, 249, 1) 0%,
+    rgba(32, 182, 249, 1) 0%,
+    rgba(33, 120, 241, 1) 100%,
+    rgba(33, 120, 241, 1) 100%
+  );
+
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &.draft {
+    background: #d0d0d0;
+  }
+
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+.scrollbar {
+  width: 30px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  // width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+  // height: 8px;
+  // 供方分辨率低，滚动条加宽
+  width: 15px;
+  height: 15px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #fef2e8;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  // box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(114, 114, 114, 0.3);
+  border-radius: 10px;
+  background: #fff;
+}
+
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+.el-table__body tr.current-row > td {
+  background-color: #f5f7fa;
+}
+
+// 分页
+.page {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0;
+  .page-outer-span {
+    line-height: 32px;
+    font-size: 14px;
+    color: #666;
+    margin-right: 20px;
+  }
+}
+
+// 弹窗顶部按钮组容器
+.dialog-top-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+// Tab顶部按钮组容器
+.tab-top-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.org-tree-btn {
+  .tab-top-btn();
+  margin-top: 20px;
+}
+
+.org-tree-cont {
+  text-align: center;
+}
+
+.tip-text {
+  font-size: 14px;
+  color: #f56c6c;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
+.operate-btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+}
+// excel预览表格
+.excel-table {
+  text-align: center;
+  height: calc(80vh);
+  overflow-y: scroll;
+  td {
+    border: 1px solid #cad9ea;
+    color: #606266;
+    height: 30px;
+  }
+  tr:first-child td {
+    position: sticky; // 固定表头
+    top: -1px;
+    background: #f5f7fa;
+    font-weight: bold;
+    min-width: 100px;
+  }
+  // tr:nth-child(odd) {
+  //   background: #fff;
+  // }
+  // tr:nth-child(even) {
+  //   background: #f5fafa;
+  // }
+}
+
+.reason-container {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #868686;
+  .reason-head {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+}
